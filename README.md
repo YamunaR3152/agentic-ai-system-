@@ -62,7 +62,7 @@ User Question
       ↓
 Frontend (index.html + JS)
       ↓
-FastAPI Endpoint (/submit-task)
+FastAPI Endpoint (/submit-task)[where the task is stored in the Redis 
       ↓
 TASK_QUEUE ───────────────► Retriever Agent
                               ↓
