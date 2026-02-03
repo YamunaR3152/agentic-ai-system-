@@ -1,0 +1,5 @@
+Artificial Intelligence (AI) is a branch of computer science that enables machines to perform tasks that typically require human intelligence. These tasks include learning from experience, reasoning, problem-solving, understanding language, and perception.
+
+AI systems can be classified into different types such as Narrow AI, General AI, and Super AI. Narrow AI is designed for specific tasks like voice assistants or recommendation systems. General AI refers to machines with human-level intelligence, while Super AI is a theoretical concept where machines surpass human intelligence.
+
+Current trends in AI include generative AI, large language models, computer vision advancements, AI in healthcare, autonomous vehicles, and ethical AI development.

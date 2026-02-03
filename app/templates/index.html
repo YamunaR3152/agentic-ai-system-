@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Agentic AI Research System</title>
+    <style>
+        body {
+            font-family: Arial;
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+            background: #f4f6f8;
+        }
+
+        h2 { text-align: center; }
+
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            font-family: monospace;
+        }
+
+        button {
+            background: #2f80ed;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        button:hover { background: #1c60c7; }
+
+        .card {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 20px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+        }
+
+        /* 🔥 FIXED VISIBILITY */
+        .status-box {
+            background: #1e293b;
+            color: white;
+            padding: 12px;
+            border-radius: 8px;
+            font-family: monospace;
+        }
+
+        .final-box {
+            background: #e8f5e9;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>📚 Agentic AI Research System</h2>
+
+    <div class="card">
+        <textarea id="query" rows="4" placeholder="Ask multiple questions separated by ?"></textarea>
+        <br><br>
+        <button onclick="runTask()">Run Task</button>
+    </div>
+
+    <div class="card">
+        <h3>📊 Task Status</h3>
+        <div id="statusBox" class="status-box">Idle...</div>
+    </div>
+
+    <div class="card final-box">
+        <h3>📝 Final Answer</h3>
+        <textarea id="final" rows="12" readonly></textarea>
+    </div>
+
+    <script src="/static/main.js"></script>
+</body>
+</html>

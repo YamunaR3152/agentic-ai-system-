@@ -1,0 +1,18 @@
+Text summarization is the process of creating a shorter version of a document
+while preserving its key information and overall meaning.
+
+There are two main types of text summarization: extractive and abstractive.
+Extractive summarization selects important sentences directly from the text.
+Abstractive summarization generates new sentences that paraphrase the content.
+
+Extractive methods are easier to implement and more interpretable.
+Common extractive techniques include frequency-based methods, clustering-based methods,
+and graph-based approaches such as TextRank.
+
+Abstractive summarization uses deep learning models such as sequence-to-sequence models
+and large language models.
+These methods can generate more natural summaries but are harder to control.
+
+Evaluation of summarization systems often uses metrics like ROUGE scores.
+Summarization is widely used in search engines, chatbots, news platforms,
+and research assistants.
