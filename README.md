@@ -62,19 +62,24 @@ User Question
       ↓
 Frontend (index.html + JS)
       ↓
-FastAPI Endpoint (/submit-task)[where the task is stored in the Redis 
+FastAPI Endpoint (/submit-task)
       ↓
-TASK_QUEUE ───────────────► Retriever Agent
-                              ↓
-                         Analyzer Agent
-                              ↓
-                          Writer Agent
-                              ↓
-STATUS_QUEUE ◄────────────────────┘
+TASK_QUEUE (Redis) ───────────────► Retriever Agent
+                                      ↓
+                               ANALYZER_QUEUE (Redis)
+                                      ↓
+                                  Analyzer Agent
+                                      ↓
+                                WRITER_QUEUE (Redis)
+                                      ↓
+                                   Writer Agent
+                                      ↓
+STATUS_QUEUE (Redis) ◄──────────────────────────────┘
       ↓
 Frontend polls /task-status/{task_id}
       ↓
 Final Answer Displayed
+
 ```
 
 ---
